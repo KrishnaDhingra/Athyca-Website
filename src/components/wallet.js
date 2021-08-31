@@ -67,7 +67,7 @@ const Text = styled.p`
 
 function Wallet() {
   return (
-    <Body>
+    <Body id="wallet">
         <Heading>WALLET DISCLOSURE</Heading>
         <CardsContainer>
             <Cards>

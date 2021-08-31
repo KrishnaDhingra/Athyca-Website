@@ -1,17 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap'
 import styled from 'styled-components'
+import { IoLogoTwitch } from "react-icons/io5";
+import { FaTwitter } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
 import '../index.css'
+import { getByDisplayValue } from '@testing-library/react';
 
 const Body = styled.div`
 
-    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     gap: 5rem;
     padding: 0rem 3rem;
     font-family: 'Cinzel', serif;
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
 
     @media (max-width: 940px){
         margin-top: 4rem;
@@ -44,12 +52,26 @@ const Body = styled.div`
         background-color: khaki;
         padding: 0.6rem 2.5rem !important;
         border: none !important;
+        background-color: rgba(255,255,231, 0.4) !important;
         color: black;
         font-weight: bold;
     }
     .rounded-pill:hover{
       transition: all 0.3s;
       transform: scale(1.04) !important;
+      background-color: black!important;
+      color: white;
+      
+    }
+    .home_logo{
+        font-size: 1.7rem;
+    }
+    .home_logo:hover{
+        transition: all 0.4s;
+        transform: translateX(3px);
+    }
+    .home_left_logo_container .home_logo:hover{
+        transform: translateX(-3px);
     }
     @media only screen and (max-width: 940px) {
         .home1, .home2{
@@ -69,13 +91,41 @@ const Body = styled.div`
       
         .rounded-pill{
             width: 250px;
+
         }
     }
 `
+const Home_Logo_Container = styled.div`
+        display: ${props => props.show ? 'none' : 'flex'};
+        flex-direction: column;
+        gap: 0.7rem;
+        transform: translate(-4.5rem, 11rem);
+        position: fixed;
+`
+const Home_Left_Logo_Container = styled.div`
+        display: ${props => props.show ? 'none' : 'flex'};
+        flex-direction: column;
+        gap: 0.7rem;
+        transform: translate(86vw, 11rem);
+        position: fixed;
+`
 
 function Home_Page() {
+
+    const [display, setDisplay] = useState(false)
+
+    let changeDisplay = () => {
+        if(window.scrollY >=3000){
+            setDisplay(true)
+        }else{
+            setDisplay(false)
+        }
+    }
+    window.addEventListener('scroll', changeDisplay)
+
     return (
-        <Body>
+        <>
+        <Body id="home">
 
             <div class="home1 d-flex bd-highlight mb-6">
                 <div className="home1-inner w-100">
@@ -117,7 +167,19 @@ Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit a
                     </div>
                 </div>
             </div>
+
+            <Home_Logo_Container show={display}                     className="home_logo_container">
+                <FaTwitter className="home_logo"></FaTwitter>
+                <IoLogoTwitch className="home_logo"></IoLogoTwitch>
+                <FaYoutube className="home_logo"></FaYoutube>
+            </Home_Logo_Container>
+
+            <Home_Left_Logo_Container show={display} className="home_left_logo_container">
+                <FaDiscord className="home_logo"></FaDiscord>
+                <FaTelegram className="home_logo"></FaTelegram>
+            </Home_Left_Logo_Container>
         </Body>
+        </>
     )
 }
 export default Home_Page

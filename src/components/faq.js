@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
+import { AiOutlineSearch } from "react-icons/ai";
 import '../index.css'
 import { data } from './data.js'
 
@@ -13,9 +14,13 @@ const Body = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 0rem;
   font-family: 'Cinzel', serif;
-  /* border: 2px solid red; */
+
+  .search_icons{
+    font-size: 1.5rem;
+
+  }
 
 `
 const Heading = styled.h1`
@@ -38,10 +43,9 @@ const Accordion = styled.div`
   align-items: center;
   width: 60%;
   margin: auto;
-  /* border: 2px solid red; */
+  margin-top: 5rem;
 `
 const ItemContainer = styled.div`
-  /* border: 2px solid red; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -55,24 +59,10 @@ const HeadingContainer = styled.div`
   font-size: 1.4rem;
   font-weight: bold;
   padding-right: 4rem;
-  /* border: 2px solid red; */
 `
-const Button = styled.button`
-    background-color: khaki;
-    padding: 0.8rem 5rem;
-    border-radius: 100px;
-    border: none;
-    color: black;
-    font-weight: bold;
 
-    &:hover{
-      transition: all 0.4s;
-      transform: scale(1.05)
-    }
-`
 const Text = styled.p`
   text-align: left;
-  /* display: none; */
 `
 
 function Faq() {
@@ -92,9 +82,9 @@ function Faq() {
     return (
 
       
-      <Body>
+      <Body id="faq">
           <Heading>FREQUENTLY ASKED QUESTIONS</Heading>
-          <Button>Lorem Ipsum Dor sit Amet is a simple? </Button>
+          {/* <Button>Lorem Ipsum Dor sit Amet is a simple? <AiOutlineSearch className="search_icon"></AiOutlineSearch></Button> */}
 
           <Accordion>
             {data.map((item, index) =>{
@@ -105,7 +95,6 @@ function Faq() {
                   <HeadingContainer  onClick={() => toggle(index)} key={index}>
                     <AccordionHeading>{item.heading}</AccordionHeading>
                     <span>{clicked === index ? <IoIosArrowUp  className="down_arrow"/> : <IoIosArrowDown  className="down_arrow"/>}</span>
-                    {/* <IoIosArrowUp className="down_arrow"></IoIosArrowUp> */}
                   </HeadingContainer>
                   {clicked === index ? (
                     <p>{item.text}</p>
@@ -125,35 +114,3 @@ function Faq() {
   }
 
 export default Faq
-// return (
-  
-//   <Body>
-//     <Heading>FREQUENTLY ASKED QUESTIONS</Heading>
-//     <Button>Lorem Ipsum Dor sit Amet is a simple? </Button>
-
-//     <Accordion>
-
-//     {data.map((item, index) => {
-//           return (
-//             <>
-//               <Divider></Divider>
-//               <ItemContainer>
-
-//                 <HeadingContainer onClick={() => toggle(index)} key={index}>
-//                 <AccordionHeading>{item.heading}</ AccordionHeading>
-//                 <IoIosArrowUp className="down_arrow" onClick={() => toggle(index)} key={index}></IoIosArrowUp>
-//                 </HeadingContainer>
-
-//                 {clicked === index ? (
-//                   <Text>
-//                     <p>{item.text}</p>
-//                   </Text>
-//                 ) : null}
-//               <ItemContainer/>
-
-//             {/* </> */}
-//           );
-//       })}
-
-//     </Accordion>
-//   </Body>

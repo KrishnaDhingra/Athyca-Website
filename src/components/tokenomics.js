@@ -64,6 +64,7 @@ const Button = styled.button`
     border: none;
     color: black;
     font-weight: bold;
+    background-color: rgba(255,255,231, 0.4);
 
     &:hover{
       transition: all 0.3s;
@@ -74,7 +75,7 @@ const Button = styled.button`
 
 function Tokenomics() {
   return (
-    <Body>
+    <Body id="tokenomics">
         <HeadingContainer>
             <Heading>TOKENOMICS</Heading>
             <Info>lorem ispum is a demo text</Info>

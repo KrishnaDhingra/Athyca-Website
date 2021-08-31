@@ -34,6 +34,19 @@ const Body = styled.div`
     font-size: 0.9rem;
     text-decoration: none;
   }
+  ul li a::after{
+      content: '';
+      display: block;
+      height: 3px;
+      width: 0;
+      left: 0;
+      top: 0;
+      background-color: black;
+      transition: all 0.3s
+    }
+    ul li a:hover::after{
+      width: 100%;
+    }
 
   .logos{
     font-size: 1.7rem;
