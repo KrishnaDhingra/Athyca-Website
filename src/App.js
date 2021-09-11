@@ -30,7 +30,6 @@ function App() {
       <Wallet></Wallet>
       <Faq></Faq>
       <Footer></Footer>
-      {/* <Faq></Faq> */}
 
 
     </Body>
