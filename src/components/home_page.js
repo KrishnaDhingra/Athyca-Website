@@ -15,8 +15,8 @@ const Body = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    font-family: 'Cinzel', sans-serif;
     padding: 0rem 3rem;
-    font-family: 'Cinzel', serif;
     width: 90%;
     margin: auto;
     margin-top: 5rem;
@@ -29,7 +29,6 @@ const Body = styled.div`
         padding: 0rem 1rem;
       
     }
-
     .home1-inner, .home2-inner{
         display: flex;
         flex-direction: column;
@@ -130,7 +129,7 @@ function Home_Page() {
             <div class="home1 d-flex bd-highlight mb-6">
                 <div className="home1-inner w-100">
                     <h2 className="p-2 bd-highlight heading font-weight-bold">Lorem ispum dolor sit</h2>
-                    <div className="p-2 bd-highlight text font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+                    <div className="text p-2 bd-highlight text font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
                         Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
                         nibh elementum mperdiet. Duis sagittis ipsum. Praesent mauris.
                         Fusce nec tellus sed augue semper porta.</div>
@@ -152,7 +151,7 @@ function Home_Page() {
             <div class="home2 d-flex bd-highlight mb-6 flex-row-reverse">
                 <div className="home2-inner w-100">
                     <h2 class="p-2 bd-highlight heading">Lorem ispum dolor sit</h2>
-                    <div class="p-2 bd-highlight text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+                    <div class="text p-2 bd-highlight text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
 Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
                         Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
                         nibh elementum mperdiet. Duis sagittis ipsum. Praesent mauris.

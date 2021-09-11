@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: 'Day Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./Assets/day-roman-cufonfonts-webfont/DAYROM__.woff') format('woff');
+}
+
+
 html, body{
     scroll-behavior: smooth;
 }
 .active{
     backdrop-filter: blur(7px);
+}
+.text{
+    font-family: 'Day Roman';
+    font-weight: 600;
 }

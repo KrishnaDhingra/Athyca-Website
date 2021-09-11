@@ -84,7 +84,6 @@ function Faq() {
       
       <Body id="faq">
           <Heading>FREQUENTLY ASKED QUESTIONS</Heading>
-          {/* <Button>Lorem Ipsum Dor sit Amet is a simple? <AiOutlineSearch className="search_icon"></AiOutlineSearch></Button> */}
 
           <Accordion>
             {data.map((item, index) =>{
@@ -92,12 +91,12 @@ function Faq() {
                 <>
                 <Divider></Divider>
                 <ItemContainer>
-                  <HeadingContainer  onClick={() => toggle(index)} key={index}>
+                  <HeadingContainer className="text" onClick={() => toggle(index)} key={index}>
                     <AccordionHeading>{item.heading}</AccordionHeading>
                     <span>{clicked === index ? <IoIosArrowUp  className="down_arrow"/> : <IoIosArrowDown  className="down_arrow"/>}</span>
                   </HeadingContainer>
                   {clicked === index ? (
-                    <p>{item.text}</p>
+                    <p className="text">{item.text}</p>
                     ) : null}
                 </ItemContainer>
               </>

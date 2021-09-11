@@ -62,7 +62,6 @@ const Logo = styled.img`
 `
 const Text = styled.p`
     text-align: justify;
-    font-weight: 500;
 `
 
 function Wallet() {
@@ -72,7 +71,7 @@ function Wallet() {
         <CardsContainer>
             <Cards>
                 <Logo src={LogoImage}></Logo>
-                <Text>consectetur adipiscing elit. Integer
+                <Text className="text">consectetur adipiscing elit. Integer
 nec odio. Praesent libero. Sed cursus
 ante dapibus diam. Sed nisi. Nulla
 quis sem at nibh elementum mperdiet.
@@ -81,7 +80,7 @@ Fusce nec tellus sed augue semper porta.</Text>
             </Cards>
             <Cards>
                 <Logo src={LogoImage}></Logo>
-                <Text>consectetur adipiscing elit. Integer
+                <Text className="text">consectetur adipiscing elit. Integer
 nec odio. Praesent libero. Sed cursus
 ante dapibus diam. Sed nisi. Nulla
 quis sem at nibh elementum mperdiet.
@@ -90,7 +89,7 @@ Fusce nec tellus sed augue semper porta.</Text>
             </Cards>
             <Cards>
                 <Logo src={LogoImage}></Logo>
-                <Text>consectetur adipiscing elit. Integer
+                <Text className="text">consectetur adipiscing elit. Integer
 nec odio. Praesent libero. Sed cursus
 ante dapibus diam. Sed nisi. Nulla
 quis sem at nibh elementum mperdiet.
@@ -99,7 +98,7 @@ Fusce nec tellus sed augue semper porta.</Text>
             </Cards>
             <Cards>
                 <Logo src={LogoImage}></Logo>
-                <Text>consectetur adipiscing elit. Integer
+                <Text className="text">consectetur adipiscing elit. Integer
 nec odio. Praesent libero. Sed cursus
 ante dapibus diam. Sed nisi. Nulla
 quis sem at nibh elementum mperdiet.
@@ -108,7 +107,7 @@ Fusce nec tellus sed augue semper porta.</Text>
             </Cards>
             <Cards>
                 <Logo src={LogoImage}></Logo>
-                <Text>consectetur adipiscing elit. Integer
+                <Text className="text">consectetur adipiscing elit. Integer
 nec odio. Praesent libero. Sed cursus
 ante dapibus diam. Sed nisi. Nulla
 quis sem at nibh elementum mperdiet.
@@ -117,7 +116,7 @@ Fusce nec tellus sed augue semper porta.</Text>
             </Cards>
             <Cards>
                 <Logo src={LogoImage}></Logo>
-                <Text>consectetur adipiscing elit. Integer
+                <Text className="text">consectetur adipiscing elit. Integer
 nec odio. Praesent libero. Sed cursus
 ante dapibus diam. Sed nisi. Nulla
 quis sem at nibh elementum mperdiet.
