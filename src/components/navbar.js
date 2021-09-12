@@ -6,7 +6,7 @@ import { FaTelegram } from "react-icons/fa";
 import '../index.css'
 
 const Body = styled.div`
-    padding: 0rem 3rem;
+    padding: 0rem 1.5rem;
     font-family: 'Cinzel', serif;
     font-weight: 700;
     
@@ -26,12 +26,12 @@ const Body = styled.div`
       margin-top: 1rem;
     }
     .d-flex{
-      gap: 2rem ;
+      gap: 1.8rem ;
     }
     .nav_links{
       color: black !important;
-      font-size: 0.9rem;
-      letter-spacing: 1px;
+      font-size: 0.8rem;
+      letter-spacing: 0.9px;
     }
     .underline:after{
       content: '';
@@ -48,7 +48,7 @@ const Body = styled.div`
       width: 100%;
     }
     .nav-button{
-      margin-top: -0.5rem;
+      margin-top: -0.7rem;
       background-color: rgba(255,255,231, 0.5);
     }
     .logo{
@@ -61,13 +61,28 @@ const Body = styled.div`
         flex-direction: column !important;
     }
   }
-    @media (max-width: 1198px) {
+
+    @media (max-width: 1300px) {
+    .d-flex{
+      gap: 1.7rem ;
+    }
+    .nav_links{
+      font-size: 0.7rem;
+    }
+  }
+  @media (max-width: 1198px) {
     .ms-auto{
       margin-top: 2rem !important;
     }
     .nav-button{
       margin-left: -1rem !important;
-
+      
+    }
+    .d-flex{
+      gap: 1.9rem ;
+    }
+    .nav_links{
+      font-size: 0.9rem;
     }
 
   }
