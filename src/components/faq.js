@@ -21,14 +21,17 @@ const Body = styled.div`
     font-size: 1.5rem;
 
   }
+  .text{
+    font-size: 0.9rem;
+  }
 
 `
 const Heading = styled.h1`
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 600;
 `
 const AccordionHeading = styled.h3`
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
 `
 const Divider = styled.div`
