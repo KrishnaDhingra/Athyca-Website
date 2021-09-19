@@ -30,7 +30,7 @@ const Body = styled.div`
     }
     .nav_links{
       color: black !important;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       letter-spacing: 0.9px;
     }
     .underline:after{

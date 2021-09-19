@@ -29,7 +29,7 @@ const SupplyContainer = styled.div`
     justify-content: center;
 `
 const Supply = styled.p`
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
 `
 const Divider = styled.div`
@@ -49,13 +49,14 @@ const Logo = styled.img`
 `
 const HeadingContainer = styled.div``
 const Heading = styled.h1`
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 600;
 `
 const Info = styled.p`
     text-align: center;
     margin-top: 1rem;
     font-weight: 600;
+    font-size: 0.9rem;
 `
 const Button = styled.button`
     background-color: khaki;
@@ -65,6 +66,7 @@ const Button = styled.button`
     color: black;
     font-weight: bold;
     background-color: rgba(255,255,231, 0.4);
+    font-size: 0.9rem;
 
     &:hover{
       transition: all 0.3s;

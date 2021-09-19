@@ -18,6 +18,7 @@ const Body = styled.div`
   gap: 1.4rem;
   background-color: rgba(255,255,231, 0.4);
   font-family: 'Cinzel', serif;
+  margin-top:-4rem;
   margin-bottom: -2rem;
   ul{
     display: flex;

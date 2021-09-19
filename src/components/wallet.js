@@ -17,7 +17,7 @@ const Body = styled.div`
     
 `
 const Heading = styled.h1`
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 600;
 `
 const CardsContainer = styled.div`
@@ -62,6 +62,7 @@ const Logo = styled.img`
 `
 const Text = styled.p`
     text-align: justify;
+    font-size: 0.95rem;
 `
 
 function Wallet() {

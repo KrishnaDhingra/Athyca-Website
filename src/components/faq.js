@@ -9,7 +9,7 @@ import { data } from './data.js'
 const Body = styled.div`
   min-height: 100vh;
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,11 +24,11 @@ const Body = styled.div`
 
 `
 const Heading = styled.h1`
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 600;
 `
 const AccordionHeading = styled.h3`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
 `
 const Divider = styled.div`
@@ -42,7 +42,6 @@ const Accordion = styled.div`
   justify-content: center;
   align-items: center;
   width: 60%;
-  margin: auto;
   margin-top: 5rem;
 `
 const ItemContainer = styled.div`
@@ -56,13 +55,9 @@ const HeadingContainer = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: bold;
   padding-right: 4rem;
-`
-
-const Text = styled.p`
-  text-align: left;
 `
 
 function Faq() {

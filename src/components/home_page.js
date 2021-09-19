@@ -41,11 +41,12 @@ const Body = styled.div`
     .text{
         font-weight: 600;
         text-transform: lowercase;
-        line-height: 1.7rem;
+        line-height: 1.5rem;
+        font-size: 0.9rem;
     }
     .heading{
         font-weight: 600;
-        font-size: 2.1rem;
+        font-size: 1.8rem;
     }
     .rounded-pill{
         background-color: khaki;
