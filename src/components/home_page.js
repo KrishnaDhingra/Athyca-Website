@@ -125,7 +125,7 @@ function Home_Page() {
 
     return (
         <>
-        <Body id="home">
+        <Body>
 
             <div class="home1 d-flex bd-highlight mb-6">
                 <div className="home1-inner w-100">

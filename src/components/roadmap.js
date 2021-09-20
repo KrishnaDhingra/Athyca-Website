@@ -32,7 +32,7 @@ const Heading = styled.h1`
 
 function Roadmap() {
   return (
-    <Body>
+    <Body id="roadmap">
       <Heading>ROADMAP</Heading>
       <img className="roadmap_image" src={RoadmapImage} alt=""/>
     </Body>

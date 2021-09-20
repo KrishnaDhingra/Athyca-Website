@@ -119,10 +119,10 @@ function Navbar1() {
             <Nav className="ms-auto d-flex align-items-start">
               <Nav.Link className="nav_links underline" href="#home">WHITEPAPER</Nav.Link>
               <Nav.Link className="nav_links underline" href="#link">USECASE</Nav.Link>
-              <Nav.Link className="nav_links underline" href="#home">ROADMAP</Nav.Link>
+              <Nav.Link className="nav_links underline" href="#roadmap">ROADMAP</Nav.Link>
               <Nav.Link className="nav_links underline" href="#tokenomics">TOKENOMICS</Nav.Link>
               <Nav.Link className="nav_links underline" href="#wallet">WALLET</Nav.Link>
-              <Nav.Link className="nav_links underline" href="#link">CRYPTO</Nav.Link>
+              <Nav.Link className="nav_links underline" href="#crypto">CRYPTO</Nav.Link>
               <Nav.Link className="nav_links underline" href="#faq">FAQ</Nav.Link>
               <Nav.Link className="nav_links rounded-pill px-5 py-3 nav-button" href="#home">JOIN US <FaTelegram className="logo"></FaTelegram></Nav.Link>
             </Nav>

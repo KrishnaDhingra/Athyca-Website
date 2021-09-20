@@ -8,8 +8,8 @@ import { data } from './data.js'
 
 const Body = styled.div`
   min-height: 100vh;
+  margin-top: -7rem;
   width: 100%;
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

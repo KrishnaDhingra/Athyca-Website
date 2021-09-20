@@ -8,6 +8,7 @@ import Roadmap from './components/roadmap.js'
 import Footer from './components/footer.js'
 import Wallet from './components/wallet.js'
 import Tokenomics from './components/tokenomics.js'
+import Crypto from './components/crypto.js'
 import Faq from './components/faq.js'
 import Background from './Assets/background.jpg'
 
@@ -21,13 +22,14 @@ const Body = styled.div`
 
 function App() {
   return (
-    <Body>
+    <Body id="home">
 
       <Navbar></Navbar>
       <Home_Page></Home_Page>
       <Roadmap></Roadmap>
       <Tokenomics></Tokenomics>
       <Wallet></Wallet>
+      <Crypto></Crypto>
       <Faq></Faq>
       <Footer></Footer>
 
