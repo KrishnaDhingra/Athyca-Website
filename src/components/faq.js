@@ -13,6 +13,7 @@ const Body = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0rem;
+  padding-top: 10rem;
   font-family: 'Cinzel', serif;
 
   .search_icons{

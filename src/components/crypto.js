@@ -4,11 +4,9 @@ import Logo from '../Assets/logo.png'
 
 const Container = styled.div`
     width: 100%;
-    /* min-height: 100vh; */
     font-family: 'Cinzel', serif;
     background-color: transparent;
     padding-top: 8rem;
-    padding-bottom: 11rem;
     height: auto;
     margin: auto;
     display: flex;
