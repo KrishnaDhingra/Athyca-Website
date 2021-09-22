@@ -6,13 +6,12 @@ import { logRoles } from '@testing-library/react';
 import '../index.css'
 
 const Body = styled.div`
-    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Cinzel', serif;
-    margin-top: 11rem;
+    padding-top: 10rem;
 
     
 `

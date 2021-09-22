@@ -9,7 +9,7 @@ const Body = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8.6rem;
+    padding-top:9.4rem;
     gap: 4rem;
 
     img {

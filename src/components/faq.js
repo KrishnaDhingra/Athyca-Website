@@ -7,8 +7,6 @@ import '../index.css'
 import { data } from './data.js'
 
 const Body = styled.div`
-  min-height: 100vh;
-  margin-top: -7rem;
   width: 100%;
   display: flex;
   flex-direction: column;

@@ -6,11 +6,11 @@ import '../index.css'
 
 const Body = styled.div`
     display: flex;
-    margin-top: 8rem;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
     font-family: 'Cinzel', serif;
+    padding-top: 8rem;
 `
 const MiddleContainer = styled.div`
     display: flex;

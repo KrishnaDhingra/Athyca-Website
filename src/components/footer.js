@@ -12,13 +12,13 @@ const Body = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 7rem 3rem;
+  padding: 4.7rem 3rem;
   width: 100%;
   margin: auto;
   gap: 1.4rem;
   background-color: rgba(255,255,231, 0.4);
   font-family: 'Cinzel', serif;
-  margin-top:-4rem;
+  margin-top: 5rem;
   margin-bottom: -2rem;
   ul{
     display: flex;
@@ -32,7 +32,7 @@ const Body = styled.div`
   ul li a{
     color: black;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.74rem;
     text-decoration: none;
   }
   ul li a::after{
